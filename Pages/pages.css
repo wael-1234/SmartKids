@@ -1,0 +1,126 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(201, 241, 241);
+}
+
+.card{
+  background-color: rgb(139, 230, 230);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  height: 650px;
+  margin:20px 20px 30px 20px;
+  text-align: center;
+  padding: 0;
+}
+
+#timingAndJoker{
+  flex-direction: row-reverse;
+}
+
+#joker{
+  margin-right: 90%;
+}
+
+/* timer */
+
+.countdown-time p {
+  text-align: center;
+  font-size: 2rem;
+}
+.countdown-time time {
+  font-size: 5rem;
+}
+
+#counter{
+  margin-left: 47%;
+  width: 4.5%;
+  background-color: rgb(201, 241, 241);
+  font-size: 30px;
+  border: #888 solid;
+  border-radius: 46%;
+}
+
+.card-text{
+  height: 100px;
+  font-size: 25px;
+  margin: 25px 2px 0px 2px;
+  padding: 5px;
+  text-align:left;
+}
+
+.button_cart {
+  color: #FFF;
+  background-color: #4bc970;
+  font-size:x-large;
+  text-align: center;
+  border-radius: 5px;
+  width: max-content;
+  height: max-content;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 1px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0.2,0.2,0.2);
+  margin: 15px 5px 0px 25px;
+}
+
+
+img {
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    border: 3px solid pink;
+}
+.form-check{
+  text-align: left;
+}
+
+/* scroll button */
+
+.scroll {
+  z-index: 99;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 500px;
+  right: -100px;
+  border-radius: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 0%,  rgb(51, 71, 225) 0%, rgba(32,45,58,1) 81.3% );
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 5px 0px #888;
+  transition: 300ms;
+}
+
+.scroll i {
+  margin-top: 10px;
+  text-shadow: 0 0 2px #fff;
+}
+
+.scroll:hover i {
+  animation-name: rotate;
+  animation-duration: 300ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  from {margin-top: 15px}
+  to {margin-top: 5px}
+}
+
+.visible {
+  right: 30px;
+  transition: all 400ms;
+  transform: rotate(360deg);
+}
+
+.visible_nav{
+  right: 30px;
+  transition: all 400ms;
+  transform:scale(0);
+}
+

@@ -1,0 +1,83 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Nav link -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+       <!-- body link -->
+      <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+      <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="../index.css">
+      <link rel="stylesheet" href="contact.css">
+    <title>Sign Up Form</title>
+          
+    </head>
+    <body>
+      <!-- Navbar -->
+      <nav id="navbar">
+        <div class="logo"><a href="../index.html"> <img src="../Images/logo.jpg" alt=""></a></div>
+        <ul>
+          <li><a href="../index.html" style="margin-right: 100px;"><i class="fa fa-home" aria-hidden="true" style="margin-right: 8px;"></i>HOME</a></li>
+          <li><a href="../Start/start.html"><i class="fa fa-play" aria-hidden="true" style="margin-right: 8px;"></i>START</a></li>
+          <li><a href="../Pages/Culture.html"><i class="fa fa-book" aria-hidden="true" style="margin-right: 8px;"></i>CULTURE</a></li>
+          <li><a href="../Pages/Nature.html"><i class="fa fa-globe" aria-hidden="true"style="margin-right: 8px;"></i>NATURE</a></li>
+          <li><a href="../Sing_in/sign_in.html" style="margin-left: 100px;"><i class="fa fa-sign-in" aria-hidden="true" style="margin-right: 8px;"></i>SIGN IN</a></li>
+        </ul>
+      </nav>
+    <div class="row" style="margin-top: 150px;">
+    <div class="col-md-12">
+      <form id="forma">
+        <h1> Cantactez nous </h1>
+        <fieldset>  
+          <legend><span class="number">1</span> Vos informations</legend>
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="user_name">
+          <label for="name">Tel:</label>
+          <input type="text" id="name" name="user_phone">
+          <label for="email">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          <label for="password">Password:</label>
+          <input type="password" id="password"  name="user_password">
+          <label>Age:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">inférieur à 13</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Supérieur à 13</label>
+        </fieldset>
+        
+        <fieldset>          
+          <legend><span class="number">2</span> Votre profil</legend>
+          <label for="bio">Bio:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+          <label for="job">Niveau éducatif:</label>
+          <select id="job" name="user_job">
+            <optgroup label="Eléve">
+              <option >3éme année primaire</option>
+              <option >4éme année primaire</option>
+              <option >5éme année primaire</option>
+              <option >6éme année primaire</option>
+            </optgroup>
+            <optgroup label="Collégien">
+                <option >7éme année primaire</option>
+                <option >8éme année primaire</option>
+                <option >9éme année primaire</option>
+            </optgroup>
+            <optgroup label="Lycéen">
+              <option >1ére année</option>
+              <option >2ére année</option>
+            </optgroup>
+          </select>
+          <label>Interets:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
+        </fieldset>
+       
+        <button type="submit" onClick="function retour()">Envoyer</button>
+        
+      </form>
+    </div>
+    </div>
+      <script src="./contact.js"></script>
+    </body>
+</html>
